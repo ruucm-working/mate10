@@ -8,8 +8,8 @@ import '../../../Items/Redstone 🔻/3 Recharts/recharts.scss';
 
 
 const data = [{name: 'Group A', value: 400}, {name: 'Group B', value: 300},
-                  {name: 'Group C', value: 300}, {name: 'Group D', value: 200}];
-const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
+                  {name: 'Group C', value: 300}];
+const COLORS = ['#89a6ff', '#ff9786', '#e4e4e4'];
 
 const RADIAN = Math.PI / 180;
 const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent, index }) => {
@@ -41,7 +41,7 @@ class Data02Component extends Component {
           <InfoBanner.Title />
           <InfoBanner.Cards />
         </InfoBanner>
-        <h1>Data 02</h1>
+        <div className="import-text">Import data on pie chart</div>
         <PieChart width={350} height={80} onMouseEnter={this.onPieEnter}>
         <Pie
           data={data} 

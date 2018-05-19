@@ -5,9 +5,11 @@ export default function HeaderComponent() {
   return (
     <div className="header"> 
       <div className="nav">
-        <div className="profile-img">
-          <img id="img"/>
-          </div></div>
+      <div className="using-icons-default-style">
+        <span className="chief-mate chief-mate-menu" /></div>
+      <div className="profile-img">
+        <img id="img"/>
+        </div></div>
     </div>
   );
 }

@@ -1,11 +1,19 @@
 @import '../../styles/base';
 
 .header {
-    padding: 0 20px;
+    // background-image: url('http://cfile24.uf.tistory.com/image/2707E93C5954716E034D8E');
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position-x: center;
+    // background-position-y: center;
+    padding: 0 15px;
     .nav {
         position: relative;
         @include center-icon-a(35px, 35px);
         padding: 60px 0;
+        .menu-icon {
+            background-image: url()
+        }
         .profile-img {
             float: right;
             width: 35px;
@@ -15,8 +23,71 @@
                 border-radius: 50px;
                 @include center(y);
                 position: absolute;
+                background-image: url('http://cfile24.uf.tistory.com/image/2707E93C5954716E034D8E');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position-x: center;
             }
 
         }
     }
 }
+
+
+.using-icons-default-style {
+    // padding: 15px 25px;
+    .chief-mate {
+    //   margin: 10px;
+      font-size: 30px;
+      &:before {
+        color: black;
+      }
+    }
+  }
+  
+
+  /**
+ *	Icons (Generated Code with https://icomoon.io/app)
+ */
+@font-face {
+    font-family: 'chief-mate';
+    src: url('../../../assets/fonts/chief-mate.eot?55s73y');
+    src: url('../../../assets/fonts/chief-mate.eot?55s73y#iefix')
+        format('embedded-opentype'),
+      url('../../../assets/fonts/chief-mate.ttf?55s73y') format('truetype'),
+      url('../../../assets/fonts/chief-mate.woff?55s73y') format('woff'),
+      url('../../../assets/fonts/chief-mate.svg?55s73y#chief-mate') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .chief-mate {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'chief-mate' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .chief-mate-user:before {
+    content: '\e904';
+  }
+  .chief-mate-bar-graph:before {
+    content: '\e900';
+  }
+  .chief-mate-circular-graph:before {
+    content: '\e901';
+  }
+  .chief-mate-github:before {
+    content: '\e902';
+  }
+  .chief-mate-menu:before {
+    content: '\e903';
+  }
+  

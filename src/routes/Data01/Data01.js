@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './Data01.scss';
+import '../../../Items/Redstone 🔻/3 Recharts/recharts.scss';
 
 class Data01Component extends Component {
   constructor() {

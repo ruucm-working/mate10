@@ -35,12 +35,12 @@
 
 
 .using-icons-default-style {
-    padding: 15px 25px;
+    // padding: 15px 25px;
     .chief-mate {
-      margin: 10px;
+    //   margin: 10px;
       font-size: 30px;
       &:before {
-        color: #8972e7;
+        color: black;
       }
     }
   }
@@ -64,7 +64,6 @@
   .chief-mate {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'chief-mate' !important;
-    speak: none;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;

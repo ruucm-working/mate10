@@ -4,7 +4,7 @@ import './InfoBanner.scss';
 export default function InfoBannerComponent() {
   return (
     <div className="info-banner">
-      (Info Banner)a
+      Cards
     </div>
   );
 }

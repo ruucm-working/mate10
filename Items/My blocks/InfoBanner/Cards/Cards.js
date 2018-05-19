@@ -3,8 +3,9 @@ import './Cards.scss'
 
 const Cards = ({ children, className, ...other }) => {
   return (
-    <div className='info-banner-cards'>
-      <h1>(Cards)</h1>
+    <div className="row grid-default-style">
+      <div className="col-6">card 1<br/>text</div>
+      <div className="col-6">card 2<br/>text</div>
     </div>
   )
   ;

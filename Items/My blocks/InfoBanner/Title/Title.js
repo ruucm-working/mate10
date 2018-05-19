@@ -3,7 +3,7 @@ import './Title.scss'
 
 const Title = ({ children, className, ...other }) => {
   return (
-    <h1 className='info-banner-title'>(Title)</h1>
+    <h1 className='HeadingH1'>Cards</h1>
   );
 }
 

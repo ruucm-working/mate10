@@ -7,8 +7,15 @@ import { PieChart, Pie, Sector, Cell } from 'recharts'
 import '../../../Items/Redstone 🔻/3 Recharts/recharts.scss';
 
 
-const data = [{name: 'Group A', value: 400}, {name: 'Group B', value: 300},
-                  {name: 'Group C', value: 300}];
+const data01 = [{name: 'Group A', value: 3}, {name: 'Group B', value: 2},
+                  {name: 'Group C', value: 5}];
+const data02 = [{name: 'Group A', value: 2}, {name: 'Group B', value: 5},
+                  {name: 'Group C', value: 3}];
+const data03 = [{name: 'Group A', value: 1}, {name: 'Group B', value: 5},
+                  {name: 'Group C', value: 4}];
+const data04 = [{name: 'Group A', value: 7}, {name: 'Group B', value: 1},
+                  {name: 'Group C', value: 2}];
+
 const COLORS = ['#89a6ff', '#ff9786', '#e4e4e4'];
 
 const RADIAN = Math.PI / 180;
@@ -44,7 +51,7 @@ class Data02Component extends Component {
         <div className="import-text">Import data on pie chart</div>
         <PieChart width={350} height={80} onMouseEnter={this.onPieEnter}>
         <Pie
-          data={data} 
+          data={data01} 
           cx="25"
           cy="center"
           labelLine={false}
@@ -52,13 +59,13 @@ class Data02Component extends Component {
           outerRadius={30}
           innerRadius={20}
           fill="#8884d8"
-        >
-        	{
+        />
+        	{/* {
           	data.map((entry, index) => <Cell fill={COLORS[index % COLORS.length]}/>)
           }
-        </Pie>
+        </Pie> */}
         <Pie
-          data={data} 
+          data={data02} 
           cx="120"
           cy="center"
           labelLine={false}
@@ -66,13 +73,13 @@ class Data02Component extends Component {
           outerRadius={30}
           innerRadius={20}
           fill="#8884d8"
-        >
-        	{
+        />
+        	{/* {
           	data.map((entry, index) => <Cell fill={COLORS[index % COLORS.length]}/>)
           }
-        </Pie>
+        </Pie> */}
         <Pie
-          data={data} 
+          data={data03} 
           cx="215"
           cy="center"
           labelLine={false}
@@ -80,13 +87,13 @@ class Data02Component extends Component {
           outerRadius={30}
           innerRadius={20}
           fill="#8884d8"
-        >
-        	{
+        />
+        	{/* {
           	data.map((entry, index) => <Cell fill={COLORS[index % COLORS.length]}/>)
           }
-        </Pie>
+        </Pie> */}
         <Pie
-          data={data} 
+          data={data04} 
           cx="308"
           cy="center"
           labelLine={false}
@@ -94,11 +101,11 @@ class Data02Component extends Component {
           outerRadius={30}
           innerRadius={20}
           fill="#8884d8"
-        >
-        	{
+        />
+        	{/* {
           	data.map((entry, index) => <Cell fill={COLORS[index % COLORS.length]}/>)
           }
-        </Pie>
+        </Pie> */}
       </PieChart>
       </div>
     )

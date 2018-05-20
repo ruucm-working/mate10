@@ -4,7 +4,6 @@ import { LineChart, Line, AreaChart, Area, Brush, XAxis, YAxis, CartesianGrid, T
 import '../../../Items/Redstone 🔻/3 Recharts/recharts.scss';
 import { log } from 'ruucm-util';
 import { map } from 'lodash';
-import '../../../Items/Redstone 🔻/2 UseData/use-data.scss';
 
 // // import { log } from 'ruucm-util';
 // // import '../../../Items/Redstone 🔻/1 GetData/get-data.scss';
@@ -38,6 +37,30 @@ export default class Data01Component extends Component {
               wins: responseJson.standing[0].wins,
               draws: responseJson.standing[0].draws,
               losses: responseJson.standing[0].losses,
+            },
+            {
+              name: 'BVB',
+              goalsAgainst: responseJson.standing[1].goalsAgainst,
+              goals: responseJson.standing[1].goals,
+              wins: responseJson.standing[1].wins,
+              draws: responseJson.standing[1].draws,
+              losses: responseJson.standing[1].losses,
+            },
+            {
+              name: 'Leverkusen',
+              goalsAgainst: responseJson.standing[2].goalsAgainst,
+              goals: responseJson.standing[2].goals,
+              wins: responseJson.standing[2].wins,
+              draws: responseJson.standing[2].draws,
+              losses: responseJson.standing[2].losses,
+            },
+            {
+              name: 'Gladbach',
+              goalsAgainst: responseJson.standing[3].goalsAgainst,
+              goals: responseJson.standing[3].goals,
+              wins: responseJson.standing[3].wins,
+              draws: responseJson.standing[3].draws,
+              losses: responseJson.standing[3].losses,
             },
           ],
         });

@@ -6,6 +6,7 @@
     border-bottom-right-radius: 10px;
     height: 82.5px;
     padding-right: 20px;
+    text-align: center;
     padding-left: 20px;
     position: fixed;
     width: 100%;
@@ -60,13 +61,13 @@
 
 .using-icons-default-style {
     .chief-mate {
-      font-size: 30px;
+      font-size: 20px;
       &:before {
         color: #8972e7;
       }
     }
   }
-  
+
   /**
  *	Icons (Generated Code with https://icomoon.io/app)
  */
@@ -107,6 +108,8 @@
   }
   .chief-mate-github:before {
     content: '\e902';
+    position: relative;
+    font-size: 22px;
   }
   .chief-mate-menu:before {
     content: '\e903';

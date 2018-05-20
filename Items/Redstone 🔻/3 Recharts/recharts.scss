@@ -1,4 +1,5 @@
 .use-data-default-style {
+  padding-left: 20px;
   strong {
     color: #fc1472;
   }
@@ -6,4 +7,11 @@
 
 .text-style{
   font-size: 16px;
+}
+
+.recharts-wrapping {
+  width: 335px;
+  height: 200px;
+  border-radius: 20px;
+  border: 1px solid gray;
 }

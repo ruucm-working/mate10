@@ -79,25 +79,15 @@ export default class Data01Component extends Component {
   render() {
     return (
       <div className="data-01">
-        <h1>Data 01</h1>
+        <h1>2015-2016<br/>
+        바이에른뮌헨의 최근 리그 승패 횟수</h1>
         {log('this.state 💎', this.state)}
-        <LineChart width={600} height={300} data={this.state.data}>
-          <CartesianGrid strokeDasharray="3 3"/>
+        <LineChart width={335} height={200} data={this.state.data}>
+          <CartesianGrid strokeDasharray="3 4"/>
           <XAxis dataKey="name" padding={{left: 30, right: 30}}/>
-          <YAxis/>
           <Tooltip/>
-          <Legend />
-          <Line type="monotone" dataKey="wins" stroke="#8884d8" activeDot={{r: 8}}/>
+          <Line type="monotone" dataKey="wins" stroke="#8884d8"/>
         </LineChart>
-        {/* {map(this.state.data, (result, id) => (
-          <LineChart data={this.state.data} width="300" height="250">
-            <XAxis/>
-            <YAxis/>
-            <Tooltip/>
-            <Line type="monotone" dataKey="wins" stroke="#8884d8" />
-            <Line type="monotone" dataKey="goals" stroke="#82ca9d" />
-          </LineChart>
-        ))} */}
       </div>
     )
   }

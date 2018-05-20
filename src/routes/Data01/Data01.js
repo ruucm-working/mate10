@@ -73,9 +73,15 @@ export default class Data01Component extends Component {
         바이에른뮌헨의 최근 리그 승패 횟수</h1>
         {log('this.state 💎', this.state)}
         <div className="recharts-wrapping">
-          <AreaChart width={335} height={200} data={this.state.data}>
+          <AreaChart width={335} height={150} margin={{top: 10, right: -5, left:0, bottom: -100}} data={this.state.data}>
+            <defs>
+              <linearGradient id="colorwins" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stopColor="#89a6ff" stopOpacity={0.8}/>
+                <stop offset="80%" stopColor="#89a6ff" stopOpacity={0}/>
+              </linearGradient>
+            </defs>
             <Tooltip/>
-            <Area type="monotone" dataKey="wins" stroke="#89a6ff"/>
+            <Area type="monotone" dataKey="wins" stroke="#89a6ff" fillOpacity={1} fill="url(#colorwins)"/>
           </AreaChart>
         </div>
       </div>

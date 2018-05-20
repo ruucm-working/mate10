@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './Data01.scss';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts'
+import { LineChart, Line, AreaChart, Area, Brush, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts'
 import '../../../Items/Redstone 🔻/3 Recharts/recharts.scss';
 import { log } from 'ruucm-util';
 import { map } from 'lodash';
@@ -82,12 +82,12 @@ export default class Data01Component extends Component {
         <h1>2015-2016<br/>
         바이에른뮌헨의 최근 리그 승패 횟수</h1>
         {log('this.state 💎', this.state)}
-        <LineChart width={335} height={200} data={this.state.data}>
-          <CartesianGrid strokeDasharray="3 4"/>
-          <XAxis dataKey="name" padding={{left: 30, right: 30}}/>
+        <AreaChart width={335} height={200} data={this.state.data}>
+          <CartesianGrid strokeDasharray="3 3"/>
+          <XAxis dataKey="name"/>
           <Tooltip/>
-          <Line type="monotone" dataKey="wins" stroke="#8884d8"/>
-        </LineChart>
+          <Area type="monotone" dataKey="wins" stroke="#89a6ff"/>
+        </AreaChart>
       </div>
     )
   }

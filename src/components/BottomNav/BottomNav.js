@@ -29,11 +29,11 @@ export default class BottomNavComponent extends Component {
               <p>Data 02</p>
             </Link>
           </div>
-          <div className="col-3">
-           <span className="chief-mate chief-mate-github" />
+          <div className="col-3"><div className="center-icon">
+            <span className="chief-mate chief-mate-github"/>
             <a href="https://github.com/chief-mate/mate10">
               <p>Github</p>
-            </a>
+            </a></div>
           </div>
         </div>
       </div>
